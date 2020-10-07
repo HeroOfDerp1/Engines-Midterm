@@ -1,14 +1,13 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 
 //Kaylyn McCune - 100662337
 //moves a single wall back and forth
 
-public class WallMovement : MonoBehaviour
+public class WallMovementHorizontal : MonoBehaviour
 {
+
     //declare variables needed
     public Vector3 startpos, endpos, temp;
     public float t;
@@ -19,7 +18,7 @@ public class WallMovement : MonoBehaviour
     {
         //initialize variables
         startpos = transform.position;
-        endpos = startpos - new Vector3(0.0f, 0.0f, 6.2f);
+        endpos = startpos - new Vector3(13.0f, 0.0f, 0.0f);
         temp = new Vector3(0.0f, 0.0f, 0.0f);
         t = 0;
         foward = true;
@@ -33,7 +32,7 @@ public class WallMovement : MonoBehaviour
         transform.position = temp;
 
         //checks if t should be increasing or decreasing, then performs the apropriate operation
-        if(foward)
+        if (foward)
         {
             t += 0.0005f;
         }
@@ -43,7 +42,7 @@ public class WallMovement : MonoBehaviour
         }
 
         //checks the value of t and changes the bool once it hits 1 or 0
-        if(t >= 1.0f)
+        if (t >= 1.0f)
         {
             foward = false;
         }
