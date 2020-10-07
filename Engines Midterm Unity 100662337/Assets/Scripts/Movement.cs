@@ -6,19 +6,43 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    //declare variables
+    float speed, rotSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //initialize variables
+        speed = 0.01f;
+        rotSpeed = 0.3f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        //the secret jump mechanic that can never see the light of day
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    Vector3 position = transform.position;
+        //    transform.position = position + new Vector3(0.0f, 1.0f, 0.0f);
+        //}
+
+        //movement
+        if(Input.GetKey(KeyCode.W))
         {
-            Vector3 position = transform.position;
-            transform.position = position + new Vector3(0.0f, 1.0f, 0.0f);
+            transform.position = transform.position + (transform.forward * speed);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position = transform.position + (-transform.forward * speed);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(new Vector3(0.0f, -1.0f, 0.0f) * rotSpeed, Space.World);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(new Vector3(0.0f, 1.0f, 0.0f) * rotSpeed, Space.World);
         }
     }
 }
