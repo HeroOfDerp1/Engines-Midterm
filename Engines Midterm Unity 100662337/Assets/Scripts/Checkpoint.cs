@@ -10,11 +10,14 @@ public class Checkpoint : MonoBehaviour
 {
     //create a maze overlord to pass the checkpoint to
     public MazeOverlord mazeOverlord;
+    //create a collider variable to turn the trigger point off, so checkpoint cant be triggered more than once
+    public Collider m_collider;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //get the collider
+        m_collider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -29,6 +32,9 @@ public class Checkpoint : MonoBehaviour
         if (other.name == "player")
         {
             mazeOverlord.currentCheckpoint = gameObject;
+            //destroy the collider so it can never be triggered again :)
+            Destroy(m_collider);
+
         }
     }
 }
