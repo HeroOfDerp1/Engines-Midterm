@@ -4780,6 +4780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!65 &171438970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16981,6 +16982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!65 &692791289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18462,6 +18464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!1 &784329922
 GameObject:
   m_ObjectHideFlags: 0
@@ -18731,6 +18734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!65 &798350348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21252,6 +21256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!65 &869348882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39892,6 +39897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!65 &1671975737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42792,7 +42798,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1379231930}
-  currentCheckpoint: {fileID: 0}
+  currentCheckpoint: {fileID: 1903909597}
+  tempCheckpoint: {fileID: 0}
+  timer: 0
 --- !u!4 &1797506950
 Transform:
   m_ObjectHideFlags: 0
@@ -45209,6 +45217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mazeOverlord: {fileID: 1797506949}
+  m_collider: {fileID: 0}
 --- !u!65 &1903909600
 BoxCollider:
   m_ObjectHideFlags: 0
