@@ -17,3 +17,6 @@ any changes in the code from the video to the final product is my dedication to 
 i filmed the video before the cube backstory to make sure i had the midterm done first
 
 to hear the full backstory (if you dont wanna hang out in the maze) press "b" key on the play scene
+
+video link:
+https://drive.google.com/file/d/1qd7758IMQJLJfx-yKguNnUBtL8fXXVkB/view?usp=sharing
