@@ -17,8 +17,8 @@ public class Movement : MonoBehaviour
     void Start()
     {
         //initialize variables
-        speed = 0.01f;
-        rotSpeed = 0.3f;
+        speed = 0.01f * 600.0f;
+        rotSpeed = 0.3f * 600.0f;
         initialRot = transform.rotation;
     }
 
@@ -35,19 +35,19 @@ public class Movement : MonoBehaviour
         //movement
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position = transform.position + (transform.forward * speed);
+            transform.position = transform.position + (transform.forward * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position = transform.position + (-transform.forward * speed);
+            transform.position = transform.position + (-transform.forward * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(new Vector3(0.0f, -1.0f, 0.0f) * rotSpeed, Space.World);
+            transform.Rotate(new Vector3(0.0f, -1.0f, 0.0f) * rotSpeed * Time.deltaTime, Space.World);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(new Vector3(0.0f, 1.0f, 0.0f) * rotSpeed, Space.World);
+            transform.Rotate(new Vector3(0.0f, 1.0f, 0.0f) * rotSpeed * Time.deltaTime, Space.World);
         }
         //resets the blocks rotation incase he rotates and you cant move properly
         if (Input.GetKey(KeyCode.R))

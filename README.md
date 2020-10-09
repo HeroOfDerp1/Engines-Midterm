@@ -18,5 +18,9 @@ i filmed the video before the cube backstory to make sure i had the midterm done
 
 to hear the full backstory (if you dont wanna hang out in the maze) press "b" key on the start scene
 
+All art assets were made by me, or are unity primatives
+
+You said that building the exe was not required now. if you do, theres a pathing issue with the dll (i asked you about it in class)
+
 video link:
 https://drive.google.com/file/d/1qd7758IMQJLJfx-yKguNnUBtL8fXXVkB/view?usp=sharing

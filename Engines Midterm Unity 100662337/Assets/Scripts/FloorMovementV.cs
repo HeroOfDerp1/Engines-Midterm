@@ -35,11 +35,11 @@ public class FloorMovementV : MonoBehaviour
         //checks if t should be increasing or decreasing, then performs the apropriate operation
         if (foward)
         {
-            t += 0.0005f;
+            t += 0.0005f * 600.0f * Time.deltaTime;
         }
         else
         {
-            t -= 0.0005f;
+            t -= 0.0005f * 600.0f * Time.deltaTime;
         }
 
         //checks the value of t and changes the bool once it hits 1 or 0

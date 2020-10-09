@@ -20,7 +20,7 @@ public class CameraRotation : MonoBehaviour
     void Start()
     {
         //initialize speed
-        speed = 0.1f;
+        speed = 0.1f * 600.0f;
         x = 0;
         y = 0;
         z = 0;
@@ -37,7 +37,7 @@ public class CameraRotation : MonoBehaviour
 
             //sets the camera angles, and updates the y and z
             //makes x turn
-            x = transform.localEulerAngles.x + (-1.0f * speed);
+            x = transform.localEulerAngles.x + (-1.0f * speed * Time.deltaTime);
             y = transform.localEulerAngles.y;
             z = transform.localEulerAngles.z;
 
@@ -61,7 +61,7 @@ public class CameraRotation : MonoBehaviour
 
             //sets the camera angles, and updates the y and z
             //makes x turn
-            x = transform.localEulerAngles.x + (1.0f * speed);
+            x = transform.localEulerAngles.x + (1.0f * speed * Time.deltaTime);
             y = transform.localEulerAngles.y;
             z = transform.localEulerAngles.z;
 
