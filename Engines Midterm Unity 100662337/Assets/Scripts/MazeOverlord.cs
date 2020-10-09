@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using UnityEngine.SceneManagement;
 
 //Kaylyn McCune - 100662337
 //The script that controls global aspects of the maze including:
@@ -104,6 +105,12 @@ public class MazeOverlord : MonoBehaviour
             SaveTime(timer);
             //reset the timer
             timer = 0.0f;
+        }
+
+        //checks to see if the player is at the end of the maze, then send them to the end scene
+        if(currentCheckpoint.name == "end")
+        {
+            SceneManager.LoadScene("End");
         }
     }
 }
