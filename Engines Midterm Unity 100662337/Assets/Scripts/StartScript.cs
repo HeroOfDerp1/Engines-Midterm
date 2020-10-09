@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 //Kaylyn McCune - 100662337
 //The purpose of this script is to add functionality to the buttons on the start scene
 //the buttons will transition to the play or end scene, depending on the button pressed
+//also clears the logger upon starting a new game so previous stats exist
 
 public class StartScript : MonoBehaviour
 {
+
+    //declare a maze overlord object for the dll access
+    public MazeOverlord overlord;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +31,8 @@ public class StartScript : MonoBehaviour
     {
         //load the scene
         SceneManager.LoadScene("Play");
+        //reset the logger on entering play scene
+        overlord.ResetLoggerTest();
         //debug line
         //Debug.Log("We loaded the play scene");
     }

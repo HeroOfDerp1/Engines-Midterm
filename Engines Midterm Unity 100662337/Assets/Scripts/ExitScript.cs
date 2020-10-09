@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //Kaylyn McCune - 100662337
 //allows the exit button to close the game
+//and the menu button to return player to the start menu
 
 public class ExitScript : MonoBehaviour
 {
@@ -23,5 +25,10 @@ public class ExitScript : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ReturnToStart()
+    {
+        SceneManager.LoadScene("Start");
     }
 }

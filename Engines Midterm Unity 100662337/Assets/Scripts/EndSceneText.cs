@@ -43,8 +43,6 @@ public class EndSceneText : MonoBehaviour
         //display total
         temp = overlord.LoadTotalTime();
         total.text = "Total Time: " + temp + " seconds";
-
-        overlord.ResetLoggerTest();
     }
 
     // Update is called once per frame
