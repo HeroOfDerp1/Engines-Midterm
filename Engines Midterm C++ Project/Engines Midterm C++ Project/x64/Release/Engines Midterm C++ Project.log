@@ -1,0 +1,15 @@
+﻿  CheckpointTimeLogger.cpp
+C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\Engines Midterm C++ Project\CheckpointTimeLogger.h(20,27): warning C4251: 'CheckpointTimeLogger::m_RTBC': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'CheckpointTimeLogger'
+C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\Engines Midterm C++ Project\CheckpointTimeLogger.h(20): message : see declaration of 'std::vector<float,std::allocator<float>>'
+C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\Engines Midterm C++ Project\CheckpointTimeLogger.cpp(31,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Main.cpp
+C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\Engines Midterm C++ Project\Main.cpp(6,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Wrapper.cpp
+C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\Engines Midterm C++ Project\CheckpointTimeLogger.h(20,27): warning C4251: 'CheckpointTimeLogger::m_RTBC': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'CheckpointTimeLogger'
+C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\Engines Midterm C++ Project\CheckpointTimeLogger.h(20): message : see declaration of 'std::vector<float,std::allocator<float>>'
+     Creating library C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\x64\Release\Engines Midterm C++ Project.lib and object C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\x64\Release\Engines Midterm C++ Project.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 112 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Engines Midterm C++ Project.vcxproj -> C:\Users\kayly\Documents\School\Game Engines\Midterm\Engines Midterm C++ Project\x64\Release\Engines Midterm C++ Project.dll
